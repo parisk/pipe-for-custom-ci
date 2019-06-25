@@ -1,7 +1,7 @@
 name: Pipe for custom CI
 image: paris/pipe-for-custom-ci
 variables:
-  - name: CI_TOOL_HOST
+  - name: CI_SYSTEM_HOST
     default: "${CI_SYSTEM_HOST}"
   - name: CI_SYSTEM_TOKEN
     default: "${CI_SYSTEM_TOKEN}"
