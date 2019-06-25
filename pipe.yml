@@ -1,0 +1,16 @@
+name: Pipe for custom CI
+image: paris/pipe-for-custom-ci
+variables:
+  - name: CI_TOOL_HOST
+    default: "${CI_SYSTEM_HOST}"
+  - name: CI_SYSTEM_TOKEN
+    default: "${CI_SYSTEM_TOKEN}"
+  - name: BITBUCKET_REPO_FULL_NAME
+    default: "${BITBUCKET_REPO_FULL_NAME}"
+  - name: BITBUCKET_BRANCH
+    default: "${BITBUCKET_BRANCH}"
+  - name: BITBUCKET_COMMIT
+    default: "${BITBUCKET_COMMIT}"
+description: A Bitbucket Pipe for custom CI systems.
+maintainer: paris@sourcelair.com
+icon: https://avatars3.githubusercontent.com/u/1188592  # Me
