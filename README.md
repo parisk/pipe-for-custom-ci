@@ -11,6 +11,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
   variables:
     CI_SYSTEM_HOST: '<string>'
     CI_SYSTEM_TOKEN: '<string>'
+    CI_JOB_ARGS: '<string>'
 ```
 
 ## Variables
@@ -19,6 +20,7 @@ Variable | Usage
 ------------ | -------------
 `CI_SYSTEM_HOST` (\*) | The host of the custom CI system
 `CI_SYSTEM_TOKEN` (\*) | The authentication token for the custom CI system
+`CI_JOB_ARGS` | Arguments to pass to the CI job in JSON format
 
 (\*) = required variable.
 
@@ -37,6 +39,7 @@ In order to use this Pipe, you need to:
   variables:
     CI_SYSTEM_HOST: ${CI_SYSTEM_HOST}
     CI_SYSTEM_TOKEN: ${CI_SYSTEM_TOKEN}
+    CI_JOB_ARGS: '{"env": "dev"}'
 ```
 
 ## License
