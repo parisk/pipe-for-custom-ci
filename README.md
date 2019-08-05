@@ -7,7 +7,7 @@ This Bitbucket Pipe sends an HTTP request to your custom CI system, letting it k
 Add the following snippet to the script section of your `bitbucket-pipelines.yml` file:
 
 ```yaml
-- pipe: paris/pipe-for-custom-ci:0.1.0
+- pipe: paris/pipe-for-custom-ci:0.2.0
   variables:
     CI_SYSTEM_HOST: '<string>'
     CI_SYSTEM_TOKEN: '<string>'
@@ -35,7 +35,7 @@ In order to use this Pipe, you need to:
 ## Examples
 
 ```
-- pipe: paris/pipe-for-custom-ci:0.1.0
+- pipe: paris/pipe-for-custom-ci:0.2.0
   variables:
     CI_SYSTEM_HOST: ${CI_SYSTEM_HOST}
     CI_SYSTEM_TOKEN: ${CI_SYSTEM_TOKEN}
